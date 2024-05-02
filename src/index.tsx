@@ -9,7 +9,7 @@ app.use(renderer);
 app.get("/", (c) => {
   return c.render(
     <main>
-      <div style="padding:20px;">
+      <div>
         <h1>
           Hi, I'm Sven. And you are
           <select title="role" onchange={`console.log("HELLO", this.value)`}>
@@ -77,5 +77,7 @@ const Underline = () => (
     <path d="M0 10 c 10 -3, 30 5, 120 0 c 10 -3, 30 2, 100 0 c 40 3, 30 -4, 80 0"></path>
   </svg>
 );
+
+// const Animate = () => <animate attributeName="rx" values="0;5;0" dur="10s" repeatCount="indefinite" />;
 
 export default app

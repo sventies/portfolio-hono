@@ -65,6 +65,73 @@ li svg {
     pointer-events: none;
     bottom: -7px;
     left: 0;
+    stroke-dasharray: 12px;
+    animation: dash 3s linear infinite;
+}
+
+@keyframes dash {
+    1% {
+        stroke-dashoffset: 0;
+    }
+    10% {
+        stroke-dashoffset: 0;
+    }
+    11% {
+        stroke-dashoffset: 10;
+    }
+    20% {
+        stroke-dashoffset: 10;
+    }
+    21% {
+        stroke-dashoffset: 20;
+    }
+    30% {
+        stroke-dashoffset: 20;
+    }
+    31% {
+        stroke-dashoffset: 30;
+    }
+    40% {
+        stroke-dashoffset: 30;
+    }
+    41% {
+        stroke-dashoffset: 40;
+    }
+    50% {
+        stroke-dashoffset: 40;
+    }
+    51% {
+        stroke-dashoffset: 50;
+    }
+    60% {
+        stroke-dashoffset: 50;
+    }
+    61% {
+        stroke-dashoffset: 60;
+    }
+    70% {
+        stroke-dashoffset: 60;
+    }
+    71% {
+        stroke-dashoffset: 70;
+    }
+    80% {
+        stroke-dashoffset: 70;
+    }
+    81% {
+        stroke-dashoffset: 80;
+    }
+    90% {
+        stroke-dashoffset: 80;
+    }
+    91% {
+        stroke-dashoffset: 90;
+    }
+    100% {
+        stroke-dashoffset: 90;
+    }
+
+    
 }
 
 h2 {
