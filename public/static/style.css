@@ -1,3 +1,73 @@
 html {
     font-family: "Inter", system-ui, sans-serif;
 }
+
+body {
+    margin: auto;
+    max-width: 960px;
+    background: #dddcd3;
+}
+
+
+select {
+    padding: 2px;
+    transform: translateY(-5px);
+    background-color: transparent;
+    border-radius: 4px;
+    border: 2px solid #fffc32;
+}
+
+h1 span {
+    color: #fffc32;
+}
+
+p {
+    color: dimgrey;
+    font-weight: 300;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+li {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 4px;
+    padding: 3px 5px;
+    cursor: pointer;
+    border-right: 4px solid #fffc32;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+}
+
+li .stripe {
+    visibility: hidden;
+}
+
+li:hover {
+    background: #fffc32;
+}
+
+li:hover .stripe {
+    visibility: visible;
+}
+
+li svg {
+    position: absolute;
+    pointer-events: none;
+    bottom: -7px;
+    left: 0;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: right;
+}
