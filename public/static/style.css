@@ -17,8 +17,14 @@ select {
     border: 2px solid #fffc32;
 }
 
-h1 span {
-    color: #fffc32;
+h1 {
+    font-weight: 600;
+}
+
+
+h2 {
+    font-weight: 500;
+    text-align: left;
 }
 
 p {
@@ -26,49 +32,54 @@ p {
     font-weight: 300;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+h1 span {
+    color: #fffc32;
 }
 
-li {
-    font-size: 22px;
-    font-weight: 600;
-    margin: 4px;
-    padding: 3px 5px;
-    cursor: pointer;
-    border-right: 4px solid #fffc32;
+.and-you-are {
     display: flex;
     flex-direction: row;
-    overflow: hidden;
-    position: relative;
+    align-items: center;
 }
 
-li .stripe {
-    visibility: hidden;
+.card {
+    cursor: pointer;
 }
 
-li:hover {
-    background: #fffc32;
-}
-
-li:hover .stripe {
-    visibility: visible;
-}
-
-li svg {
-    position: absolute;
+.underlines {
+    display: flex;
+    flex-direction: row;
     pointer-events: none;
     bottom: -7px;
     left: 0;
+}
+
+details summary {
+    background: #dddcd3;
+}
+
+details summary:hover {
+    background: yellow;
+}
+
+details[open] summary {
+  background: yellow;
+}
+
+
+details {
+    background: yellow;
+}
+
+details div {
+}
+
+details svg {
     stroke-dasharray: 12px;
     animation: dash 3s linear infinite;
 }
 
+/* Weird way to create step animation instead of just adjusting the ease of the animation. */
 @keyframes dash {
     1% {
         stroke-dashoffset: 0;
@@ -130,11 +141,4 @@ li svg {
     100% {
         stroke-dashoffset: 90;
     }
-
-    
-}
-
-h2 {
-    font-weight: 500;
-    text-align: right;
 }

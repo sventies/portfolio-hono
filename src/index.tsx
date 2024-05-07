@@ -1,7 +1,6 @@
 import { Hono } from 'hono'
 import { renderer } from './renderer'
 
-
 const app = new Hono();
 
 app.use(renderer);
@@ -10,16 +9,19 @@ app.get("/", (c) => {
   return c.render(
     <main>
       <div>
-        <h1>
-          Hi, I'm Sven. And you are
-          <select title="role" onchange={`console.log("HELLO", this.value)`}>
-            <option value="manager">a manager</option>
-            <option value="developer">a developer</option>
-            <option value="recruiter">a recruiter</option>
-            <option value="mom">my mom</option>
-            <option value="cat">a cat</option>
-          </select>
-        </h1>
+        <h1>Hi, I'm Sven.</h1>
+        <div>
+          <h2>
+            And you are
+            <select title="role" onchange={`console.log("HELLO", this.value)`}>
+              <option value="manager">a manager</option>
+              <option value="developer">a developer</option>
+              <option value="recruiter">a recruiter</option>
+              <option value="mom">my mom</option>
+              <option value="cat">a cat</option>
+            </select>
+          </h2>
+        </div>
         <p>
           I'm a software developer with an engineering background. I worked on several applications for engineering and
           financial companies. I'm currently building <a href="https://sitopie.com">Sitopie</a> on the side.
@@ -30,7 +32,24 @@ app.get("/", (c) => {
         </p>
         <p>If you want to learn more, reach out.</p>
         <h2>Selected work:</h2>
-        <ul>
+
+        {/* <div class="card">
+          <details>
+            <summary>Icon Generator</summary>
+            <div>
+              <p>A way to quickly generate SVG icons on mobile.</p>
+
+              <div class="underlines">
+                <Underline />
+                <Underline />
+                <Underline />
+                <Underline />
+              </div>
+            </div>
+          </details>
+        </div> */}
+
+        {/* <ul>
           <li>
             Icon Generator <Underline />
           </li>
@@ -63,7 +82,7 @@ app.get("/", (c) => {
         <details>
           <summary>Click to toggle content</summary>
           <p>This is the full content that is revealed when a user clicks on the summary</p>
-        </details>
+        </details> */}
       </div>
     </main>,
     { title: "Hi there" }
@@ -77,7 +96,5 @@ const Underline = () => (
     <path d="M0 10 c 10 -3, 30 5, 120 0 c 10 -3, 30 2, 100 0 c 40 3, 30 -4, 80 0"></path>
   </svg>
 );
-
-// const Animate = () => <animate attributeName="rx" values="0;5;0" dur="10s" repeatCount="indefinite" />;
 
 export default app
