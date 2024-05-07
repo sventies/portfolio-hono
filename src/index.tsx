@@ -1,5 +1,6 @@
 import { Hono } from 'hono'
 import { renderer } from './renderer'
+import Card from "./card";
 
 const app = new Hono();
 
@@ -9,7 +10,7 @@ app.get("/", (c) => {
   return c.render(
     <main>
       <div>
-        <h1>Hi, I'm Sven.</h1>
+        <h1>Hi there, it's me. Sven.</h1>
         <div>
           <h2>
             And you are
@@ -23,15 +24,12 @@ app.get("/", (c) => {
           </h2>
         </div>
         <p>
-          I'm a software developer with an engineering background. I worked on several applications for engineering and
+          I'm a software consultant with an engineering background. I worked on several applications for engineering and
           financial companies. I'm currently building <a href="https://sitopie.com">Sitopie</a> on the side.
         </p>
-        <p>
-          If you work with me, I'll build you a proof of concept in a couple of days or weeks and we take it from there.
-          This means no big upfront costs.
-        </p>
-        <p>If you want to learn more, reach out.</p>
+
         <h2>Selected work:</h2>
+        <Card title="Icon Generator" description="A way to quickly generate SVG icons on mobile." />
 
         {/* <div class="card">
           <details>
@@ -84,8 +82,13 @@ app.get("/", (c) => {
           <p>This is the full content that is revealed when a user clicks on the summary</p>
         </details> */}
       </div>
+      <p>
+        If you work with me, I'll build you a proof of concept in a couple of days or weeks and we take it from there.
+        This means no big upfront costs.
+      </p>
+      <p>If you want to learn more, reach out.</p>
     </main>,
-    { title: "Hi there" }
+    { title: "Hi there, it's me" }
   );
 });
 
