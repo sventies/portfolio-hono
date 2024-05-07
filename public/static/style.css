@@ -43,9 +43,6 @@ h1 span {
     align-items: center;
 }
 
-.card {
-    cursor: pointer;
-}
 
 .underlines {
     display: flex;
@@ -142,4 +139,57 @@ details svg {
     100% {
         stroke-dashoffset: 90;
     }
+}
+
+
+.card {
+    border-radius: 4px;
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.card-yellow {
+    background: yellow;
+}
+
+.card img {
+    object-fit: contain;
+}
+
+.card .texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 0;
+    flex: 1;
+}
+
+.card .link-wrapper {
+    text-align: right;
+}
+
+.card .link-wrapper-yellow a {
+    color: yellow;
+}
+
+.card a {
+    font-size: 22px;
+    background: black;
+    color: #dddcd3;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 0 10px;
 }

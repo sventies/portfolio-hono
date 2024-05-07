@@ -10,7 +10,7 @@ app.get("/", (c) => {
   return c.render(
     <main>
       <div>
-        <h1>Hi there, it's me. Sven.</h1>
+        <h1>Hi there. It's me, Sven.</h1>
         <div>
           <h2>
             And you are
@@ -29,7 +29,14 @@ app.get("/", (c) => {
         </p>
 
         <h2>Selected work:</h2>
-        <Card title="Icon Generator" description="A way to quickly generate SVG icons on mobile." />
+        <Card
+          color="yellow"
+          title="Icon Generator"
+          description="A way to quickly generate SVG icons on mobile."
+          src="https://utfs.io/f/64e12e70-8861-44bb-8f2c-0d3d5d3aa4a3-eecii3.28.27.png"
+          alt="Icont Generator"
+          link="https://icon-creator.pages.dev"
+        />
 
         {/* <div class="card">
           <details>
