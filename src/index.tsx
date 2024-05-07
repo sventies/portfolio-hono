@@ -1,5 +1,5 @@
-import { Hono } from 'hono'
-import { renderer } from './renderer'
+import { Hono } from "hono";
+import { renderer } from "./renderer";
 import Card from "./card";
 
 const app = new Hono();
@@ -32,7 +32,17 @@ app.get("/", (c) => {
         <Card
           color="yellow"
           title="Icon Generator"
-          description="A way to quickly generate SVG icons on mobile."
+          description="A way to quickly create icons, generate an SVG from it and get on with your life. Mobile support 📱."
+          src="https://utfs.io/f/64e12e70-8861-44bb-8f2c-0d3d5d3aa4a3-eecii3.28.27.png"
+          videoSrc="https://utfs.io/f/2c6b81a5-7627-44d9-839f-facf6fec7af4-ctfrhs.51.08.mp4"
+          alt="Icont Generator"
+          link="https://icon-creator.pages.dev"
+        />
+
+        <Card
+          color="yellow"
+          title="Sitopie"
+          description="A website builder for everyone."
           src="https://utfs.io/f/64e12e70-8861-44bb-8f2c-0d3d5d3aa4a3-eecii3.28.27.png"
           alt="Icont Generator"
           link="https://icon-creator.pages.dev"
@@ -107,4 +117,4 @@ const Underline = () => (
   </svg>
 );
 
-export default app
+export default app;
