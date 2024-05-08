@@ -33,7 +33,7 @@ const Card: FC<Props> = ({ title, description, src, alt, link, color, videoSrc }
       {videoSrc ? (
         <video width={VID_SIZE} height={VID_SIZE} autoPlay loop muted src={videoSrc} poster={src} />
       ) : (
-        <img width={IMG_WIDTH} height={IMG_HEIGHT} src={src} alt={alt} />
+        <img width={VID_SIZE} height={VID_SIZE} src={src} alt={alt} />
       )}
       <div class="texts">
         <h3>{title}</h3>

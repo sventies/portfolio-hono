@@ -32,7 +32,7 @@ app.get("/", (c) => {
         <Card
           color="yellow"
           title="Icon Generator"
-          description="A way to quickly create icons, generate an SVG from it and get on with your life. Mobile support 📱."
+          description="A way to quickly create icons, generate an SVG from it and get on with your life. 📱 Mobile supported."
           src="https://utfs.io/f/64e12e70-8861-44bb-8f2c-0d3d5d3aa4a3-eecii3.28.27.png"
           videoSrc="https://utfs.io/f/2c6b81a5-7627-44d9-839f-facf6fec7af4-ctfrhs.51.08.mp4"
           alt="Icont Generator"
@@ -44,6 +44,16 @@ app.get("/", (c) => {
           title="Sitopie"
           description="A website builder for everyone."
           src="https://utfs.io/f/64e12e70-8861-44bb-8f2c-0d3d5d3aa4a3-eecii3.28.27.png"
+          alt="Icont Generator"
+          link="https://icon-creator.pages.dev"
+        />
+
+        <Card
+          color="blue"
+          title="Ampelmann"
+          description="A website builder for everyone."
+          src="https://utfs.io/f/64e12e70-8861-44bb-8f2c-0d3d5d3aa4a3-eecii3.28.27.png"
+          videoSrc="https://www.ampelmann.nl/static/47415d2e40ed9a2ccb31c3a64aa61d7c/Homepage_reel_v8_20s_b40d5f5d2f.mp4"
           alt="Icont Generator"
           link="https://icon-creator.pages.dev"
         />
