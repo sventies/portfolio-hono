@@ -10,10 +10,9 @@ app.get("/", (c) => {
   return c.render(
     <main>
       <div>
-        <h1>Hi there. It's me, Sven.</h1>
-        <div>
-          <h2>
-            And you are
+        <section>
+          <h1>
+            Hi there. It's me, Sven. And you are
             <select title="role" onchange={`console.log("HELLO", this.value)`}>
               <option value="manager">a manager</option>
               <option value="developer">a developer</option>
@@ -21,18 +20,30 @@ app.get("/", (c) => {
               <option value="mom">my mom</option>
               <option value="cat">a cat</option>
             </select>
-          </h2>
-        </div>
-        <p>
-          I'm a software consultant with an engineering background. I worked on several applications for engineering and
-          financial companies. I'm currently building <a href="https://sitopie.com">Sitopie</a> on the side.
-        </p>
+          </h1>
+          {/* <div>
+            <h2>
+              And you are
+              <select title="role" onchange={`console.log("HELLO", this.value)`}>
+                <option value="manager">a manager</option>
+                <option value="developer">a developer</option>
+                <option value="recruiter">a recruiter</option>
+                <option value="mom">my mom</option>
+                <option value="cat">a cat</option>
+              </select>
+            </h2>
+          </div> */}
+          <p>
+            I'm a software consultant with an engineering background. I worked on several applications for engineering
+            and financial companies. I'm currently building <a href="https://sitopie.com">Sitopie</a> on the side.
+          </p>
 
-        <h2>Selected work:</h2>
+          {/* <h2>Selected work:</h2> */}
+        </section>
         <Card
           color="yellow"
           title="Icon Generator"
-          description="A way to quickly create icons, generate an SVG from it and get on with your life. 📱 Mobile supported."
+          description="A way to quickly create icons, generate an SVG from it and get on with your life. Mobile supported."
           src="https://utfs.io/f/64e12e70-8861-44bb-8f2c-0d3d5d3aa4a3-eecii3.28.27.png"
           videoSrc="https://utfs.io/f/2c6b81a5-7627-44d9-839f-facf6fec7af4-ctfrhs.51.08.mp4"
           alt="Icont Generator"
@@ -40,7 +51,7 @@ app.get("/", (c) => {
         />
 
         <Card
-          color="yellow"
+          color="blue"
           title="Sitopie"
           description="A website builder for everyone."
           src="https://utfs.io/f/64e12e70-8861-44bb-8f2c-0d3d5d3aa4a3-eecii3.28.27.png"

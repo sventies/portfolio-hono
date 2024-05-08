@@ -29,20 +29,34 @@ interface Props {
 const Card: FC<Props> = ({ title, description, src, alt, link, color, videoSrc }) => {
   const className = `card card-${color}`;
   return (
-    <div class={className}>
-      {videoSrc ? (
-        <video width={VID_SIZE} height={VID_SIZE} autoPlay loop muted src={videoSrc} poster={src} />
-      ) : (
-        <img width={VID_SIZE} height={VID_SIZE} src={src} alt={alt} />
-      )}
-      <div class="texts">
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <div class={`link-wrapper link-wrapper-${color}`}>
-          <a href={link}>→</a>
+    <section class={color}>
+      <div class="section-wrapper">
+        <div class="section-title-wrapper">
+          <h2>{title}</h2>
+          <div>links</div>
         </div>
+        {videoSrc ? (
+          <video width={VID_SIZE} height={VID_SIZE} autoPlay loop muted src={videoSrc} poster={src} />
+        ) : (
+          <img width={VID_SIZE} height={VID_SIZE} src={src} alt={alt} />
+        )}
+        <p class="description">{description}</p>
+        {/* <div class={className}>
+        {videoSrc ? (
+          <video width={VID_SIZE} height={VID_SIZE} autoPlay loop muted src={videoSrc} poster={src} />
+        ) : (
+          <img width={VID_SIZE} height={VID_SIZE} src={src} alt={alt} />
+        )}
+        <div class="texts">
+          <h3>{title}</h3>
+          <p>{description}</p>
+          <div class={`link-wrapper link-wrapper-${color}`}>
+            <a href={link}>→</a>
+          </div>
+        </div>
+      </div> */}
       </div>
-    </div>
+    </section>
   );
 };
 
