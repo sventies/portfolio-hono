@@ -48,13 +48,35 @@ app.get("/", (c) => {
           videoSrc="https://utfs.io/f/2c6b81a5-7627-44d9-839f-facf6fec7af4-ctfrhs.51.08.mp4"
           alt="Icont Generator"
           link="https://icon-creator.pages.dev"
+          githubLink="789"
         />
 
         <Card
           color="blue"
           title="Sitopie"
-          description="A website builder for everyone."
-          src="https://utfs.io/f/64e12e70-8861-44bb-8f2c-0d3d5d3aa4a3-eecii3.28.27.png"
+          description="A website builder for everyone. The goal is to make it easier to publish a website than to update your insta profile. If you're looking for a simple website builder, let me know."
+          src="https://utfs.io/f/e2bf8713-9b57-4232-9401-70197ba523d7-t2qsq5.22.06.png"
+          videoSrc="https://utfs.io/f/8b75670a-7fcd-409f-9fa8-3e5fb287117d-9sh7uq.mp4"
+          alt="Icont Generator"
+          link="https://icon-creator.pages.dev"
+        />
+
+        <Card
+          color="green"
+          title="IVO Finance"
+          description="A smarter way to do investment structures"
+          src="https://utfs.io/f/e2bf8713-9b57-4232-9401-70197ba523d7-t2qsq5.22.06.png"
+          videoSrc="https://utfs.io/f/8b75670a-7fcd-409f-9fa8-3e5fb287117d-9sh7uq.mp4"
+          alt="Icont Generator"
+          link="https://icon-creator.pages.dev"
+        />
+
+        <Card
+          color="yellow"
+          title="This website"
+          description="I wanted to try out Hono and struggled with it / had fun with it. Ended up with this."
+          src="https://utfs.io/f/e2bf8713-9b57-4232-9401-70197ba523d7-t2qsq5.22.06.png"
+          videoSrc="https://utfs.io/f/8b75670a-7fcd-409f-9fa8-3e5fb287117d-9sh7uq.mp4"
           alt="Icont Generator"
           link="https://icon-creator.pages.dev"
         />
@@ -62,7 +84,7 @@ app.get("/", (c) => {
         <Card
           color="blue"
           title="Ampelmann"
-          description="A website builder for everyone."
+          description="Offshore access as easy as crossing the street."
           src="https://utfs.io/f/64e12e70-8861-44bb-8f2c-0d3d5d3aa4a3-eecii3.28.27.png"
           videoSrc="https://www.ampelmann.nl/static/47415d2e40ed9a2ccb31c3a64aa61d7c/Homepage_reel_v8_20s_b40d5f5d2f.mp4"
           alt="Icont Generator"
@@ -120,11 +142,13 @@ app.get("/", (c) => {
           <p>This is the full content that is revealed when a user clicks on the summary</p>
         </details> */}
       </div>
-      <p>
+      {/* <p>
         If you work with me, I'll build you a proof of concept in a couple of days or weeks and we take it from there.
         This means no big upfront costs.
-      </p>
-      <p>If you want to learn more, reach out.</p>
+      </p> */}
+      <section>
+        <p>If you want to learn more, reach out.</p>
+      </section>
     </main>,
     { title: "Hi there, it's me" }
   );
