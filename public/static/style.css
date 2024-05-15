@@ -1,12 +1,68 @@
 html {
     font-family: "Inter", system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: auto;
-    max-width: 960px;
+    margin: 0;
+    padding: 0;
     background: #dddcd3;
+}
+
+section {
     padding: 10px;
+    border-top: 3px solid black;
+}
+
+section.yellow {
+    background: #ffffcc;
+    /* background: tomato; */
+}
+
+section.yellow h2 {
+    background: #ffff33; 
+}
+
+section.blue {
+    background: #ccddff;
+}
+
+section.blue h2 {
+    background: #3581FF;
+    color: white;
+}
+
+
+section.green {
+    background: #aaffaa;
+}
+
+section p {
+    font-weight: 300;
+    color: dimgrey;
+}
+
+p.description {
+    font-size: 14px;
+    font-style: italic;
+    margin-top:5px;
+}
+
+.section-wrapper {
+    margin: auto;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -24,8 +80,10 @@ h1 {
 
 
 h2 {
+    font-size: 18px;
     font-weight: 500;
     text-align: left;
+    padding: 5px 2px;
 }
 
 p {
@@ -43,6 +101,19 @@ h1 span {
     align-items: center;
 }
 
+.github-link {
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    display: block;
+                /* style="overflow:hidden; width:30px;" */
+}
+
+.github-link:hover {
+
+    background: blue;
+}
+
 
 .underlines {
     display: flex;
@@ -50,6 +121,8 @@ h1 span {
     pointer-events: none;
     bottom: -7px;
     left: 0;
+    overflow: hidden;
+    width: 30px;
 }
 
 details summary {
@@ -72,7 +145,12 @@ details {
 details div {
 }
 
-details svg {
+/* details svg {
+    stroke-dasharray: 12px;
+    animation: dash 3s linear infinite;
+} */
+
+.stripe {
     stroke-dasharray: 12px;
     animation: dash 3s linear infinite;
 }
@@ -152,12 +230,21 @@ details svg {
 }
 
 .card-yellow {
-    background: yellow;
+    background: #ffffaa;
 }
 
-.card img {
+section img {
     object-fit: contain;
+    border: 2px solid black;
+    /* border-radius: 4px; */
 }
+
+section video {
+    border: 2px solid black;
+    object-fit: cover;
+    /* border-radius: 4px; */
+}
+
 
 .card .texts {
     display: flex;
